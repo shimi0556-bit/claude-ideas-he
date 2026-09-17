@@ -1,37 +1,32 @@
 ---
 name: meeting-notes-to-actions
 description: >-
-  Use when Shimi (or the team) pastes raw meeting notes, a transcript, WhatsApp/Slack
-  dump, or messy Hebrew/English bullets and needs decisions + action items with owners
-  and deadlines — not a full discussion summary.
+  Convert raw meeting notes, transcripts, WhatsApp/Slack dumps, or messy
+  Hebrew/English bullets into decisions and an action table (owner, deadline,
+  dependencies, status) — not a full discussion summary. Use when the user
+  says סיכום ישיבה, משימות מהישיבה, action items, meeting notes, פרוטוקול,
+  או להפוך הערות להחלטות/בעלים/דדליין.
 ---
 
 # Meeting notes → decisions + action items
 
-## Goal
-Turn messy notes into **only**:
-1. Decisions made
-2. Action items (owner, deadline, dependency, status)
-3. Open questions
+## Why
+Raw notes bury commitments. A fixed table makes owners and deadlines scannable in under a minute and stops vague “נחשוב על זה” from looking like real work.
 
-Do **not** narrate the whole discussion. Skip small talk and repeated debate.
+## Do this
+1. Read the notes once. Extract **only** decisions, actionable tasks, and open questions.
+2. Skip small talk, repeated debate, and topics with no decision.
+3. Build the Hebrew output exactly in the format below.
+4. Ask **at most one** follow-up question — only if a critical owner or deadline is missing.
 
-## Input you will get
-- Raw notes / transcript / bullet dump (Hebrew and/or English)
-- Optional: known people and their roles
-- Optional: default timezone `Asia/Jerusalem`
-
-If owner names are unclear, use the best short name from the notes and mark `(לא ודאי)`.
-If no deadline was said, write `טרם נקבע` and suggest a reasonable default in parentheses only as a suggestion, clearly labeled.
-
-## Output format (Hebrew)
+## Output format (always)
 
 ```markdown
 ## החלטות
 - ...
 
 ## משימות
-| משימה | בעלים | דדליין | תלות | סטטוס |
+| משימה | בעלים | דדליין | תלויות | סטטוס |
 |---|---|---|---|---|
 | ... | ... | ... | ... | פתוח |
 
@@ -42,12 +37,34 @@ If no deadline was said, write `טרם נקבע` and suggest a reasonable defaul
 - נושאים שדובר עליהם בלי החלטה
 ```
 
-## Rules
-- One row per actionable task; verb-first (`לשלוח`, `לתקן`, `לאשר`).
-- Prefer concrete tasks over vague ones (`לחשוב על שיווק` → ask or drop into open questions).
+## Ambiguity rules
+- Owner missing or unclear → `לא צוין` (do not invent names).
+- Deadline not stated → `טרם נקבע` (optional suggested date only in parentheses, labeled `הצעה:`).
+- Vague item (“לחשוב על שיווק”) → move to **שאלות פתוחות** or rewrite as a concrete verb-first task if the notes support it.
 - Never invent attendees, commitments, or dates that were not in the notes.
-- If the notes are empty of decisions, say so and list at most 3 clarifying questions.
-- Keep the whole reply scannable in under ~60 seconds.
+- Default timezone: `Asia/Jerusalem` unless the notes say otherwise.
+- Task text: verb-first Hebrew (`לשלוח`, `לתקן`, `לאשר`).
 
-## Optional follow-up
-After delivering the table, ask **one** question only if a critical owner or deadline is missing.
+## Example
+
+**Input (raw):**
+> דיברנו על העלאת המצגת. שימי אמר שישלח ליוסי עד יום רביעי. לא החלטנו על התקציב. מישהו צריך לבדוק את הלוגו.
+
+**Output:**
+
+```markdown
+## החלטות
+- שימי ישלח את המצגת ליוסי עד יום רביעי
+
+## משימות
+| משימה | בעלים | דדליין | תלויות | סטטוס |
+|---|---|---|---|---|
+| לשלוח את המצגת ליוסי | שימי | יום רביעי | — | פתוח |
+| לבדוק את הלוגו | לא צוין | טרם נקבע | — | פתוח |
+
+## שאלות פתוחות
+- מה מחליטים לגבי התקציב?
+
+## מה לא נכלל (בכוונה)
+- דיון כללי על המצגת בלי פרטים נוספים
+```
