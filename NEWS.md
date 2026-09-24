@@ -7,6 +7,7 @@
 
 | תאריך | מקור | תקציר | למי |
 |---|---|---|---|
+| 2026-09-23 | Oddy | Claude Opus 5.5 + Higgsfield connector → אתרים 3D/Vercel | תום (+אלון לידיעה) |
 | 2026-09-21 | Oddy | GPT Image 2.5 → Astra UI → WebGL 3D | אלון |
 | 2026-09-19 | Oddy | Codex + Higgsfield; High; CTA בריפליי | אלון |
 | 2026-09-17 | אבידני | Data controls / Privacy | תום + אלון |
