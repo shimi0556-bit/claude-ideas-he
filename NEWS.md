@@ -7,6 +7,7 @@
 
 | תאריך | מקור | תקציר | למי |
 |---|---|---|---|
+| 2026-09-29 | Oddy | Claude Sonnet 5.5 לעיצוב אתרים (זול/כמעט ללא קרדיט) + getdesign.ai / Pinterest→GPT Image→Seedance→Claude; Opus רק לקשה | תום |
 | 2026-09-28 | Oddy / אבידני | Opus 5.5 + Higgsfield API → אפליקציה גנרטיבית; Opus 5.5 effort=medium כברירת מחדל + שינויים שוברים ב־API | תום |
 | 2026-09-23 | Oddy | Claude Opus 5.5 + Higgsfield connector → אתרים 3D/Vercel | תום (+אלון לידיעה) |
 | 2026-09-21 | Oddy | GPT Image 2.5 → Astra UI → WebGL 3D | אלון |
