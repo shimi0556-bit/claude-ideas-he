@@ -7,6 +7,7 @@
 
 | תאריך | מקור | תקציר | למי |
 |---|---|---|---|
+| 2026-10-06 | אבידני | Mods ב־Claude Code: פלאגינים שמשנים את הנראות (שורת סטטוס / Live pane) דרך `plugin-authoring` — למשל תאריך עברי ועלות API לשיחה | תום |
 | 2026-09-30 | אבידני | Opus 5.5 בתלת־ממד = קוד+מחברים (Nano Banana/11 Labs/FFmpeg) + פידבק מפורט + הגבלת secrets/אשראי ב־bypass | תום |
 | 2026-09-29 | Oddy | Claude Sonnet 5.5 לעיצוב אתרים (זול/כמעט ללא קרדיט) + getdesign.ai / Pinterest→GPT Image→Seedance→Claude; Opus רק לקשה | תום |
 | 2026-09-28 | Oddy / אבידני | Opus 5.5 + Higgsfield API → אפליקציה גנרטיבית; Opus 5.5 effort=medium כברירת מחדל + שינויים שוברים ב־API | תום |
