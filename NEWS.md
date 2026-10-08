@@ -7,6 +7,7 @@
 
 | תאריך | מקור | תקציר | למי |
 |---|---|---|---|
+| 2026-10-07 | אבידני | AWS Bedrock AgentCore Harness: סוכן מנוהל בכמה לחיצות — מודל מהקטלוג (כולל Claude), זיכרון לפי סשן, כלים/MCP ו־Skills מ־Git, בדיקה ב־Playground עם הידוק פרומפט שלילי, ו־Export to Code ל־API | תום |
 | 2026-10-07 | Oddy | השוואת מודלים הוגנת: פישוט פרומפט motionsites → Claude Code (Opus 5.5 medium) מול Codex (Astra medium) עם «no testing, make it quick» → Claude עורך שתי הקלטות מסך לסרטון צד־לצד | תום |
 | 2026-10-06 | אבידני | Mods ב־Claude Code: פלאגינים שמשנים את הנראות (שורת סטטוס / Live pane) דרך `plugin-authoring` — למשל תאריך עברי ועלות API לשיחה | תום |
 | 2026-09-30 | אבידני | Opus 5.5 בתלת־ממד = קוד+מחברים (Nano Banana/11 Labs/FFmpeg) + פידבק מפורט + הגבלת secrets/אשראי ב־bypass | תום |
